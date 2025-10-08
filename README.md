@@ -1,4 +1,4 @@
-# cars-deep-learning-project
+# Cars Deep Learning Project
 
 ## Mandatory Assignment 1
 
