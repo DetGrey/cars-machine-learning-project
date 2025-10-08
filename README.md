@@ -5,13 +5,13 @@
 **For your Mandatory Assignment 1 you must do the following**:
 
 - obtain the cars.csv file from the course materials folder in the course materials repository
-- using the dataset found in the file, complete the tasks below
-- formulate a regression problem
-- formulate a logistic regression problem
-- design and train a model for each of the regression and logistic regression problems
-- fine tune your models
-- answer your problem formulations
-- write a max two page research article (in Latex) with relevant visuals
+- using the dataset found in the file, complete the tasks below:
+  - formulate a regression problem
+  - formulate a logistic regression problem
+  - design and train a model for each of the regression and logistic regression problems
+  - fine tune your models
+  - answer your problem formulations
+  - write a max two page research article (in Latex) with relevant visuals
 
 **Submit the following to the [code share repository](https://gitlab.com/keaorg/kea-aai-codeshare-2025-2)**:
 - article in PDF
