@@ -1,5 +1,5 @@
 [project]
-name = "cars-deep-learning-project"
+name = "cars-machine-learning-project"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -10,4 +10,17 @@ dependencies = [
     "numpy>=2.3.3",
     "pandas>=2.3.3",
     "scikit-learn>=1.7.2",
+]
+
+[tool.uv.workspace]
+members = [
+    ".",
+]
+
+[tool.uv.sources]
+cars-machine-learning-project = { workspace = true }
+
+[dependency-groups]
+dev = [
+    "cars-machine-learning-project",
 ]

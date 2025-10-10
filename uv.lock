@@ -151,7 +151,7 @@ css = [
 ]
 
 [[package]]
-name = "cars-deep-learning-project"
+name = "cars-machine-learning-project"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
@@ -162,6 +162,11 @@ dependencies = [
     { name = "scikit-learn" },
 ]
 
+[package.dev-dependencies]
+dev = [
+    { name = "cars-machine-learning-project" },
+]
+
 [package.metadata]
 requires-dist = [
     { name = "jupyter", specifier = ">=1.1.1" },
@@ -170,6 +175,9 @@ requires-dist = [
     { name = "pandas", specifier = ">=2.3.3" },
     { name = "scikit-learn", specifier = ">=1.7.2" },
 ]
+
+[package.metadata.requires-dev]
+dev = [{ name = "cars-machine-learning-project", virtual = "." }]
 
 [[package]]
 name = "certifi"
