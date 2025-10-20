@@ -43,23 +43,24 @@ Your submission should not include large datasets, but clearly document how to o
 
 ### Regression Problem Example
 
-**Goal**: Predict a car’s fuel efficiency (`mpg`) based on its physical and performance characteristics.
+**Goal**: Predict a car’s **acceleration time (seconds from 0 to 60 mph)** based on its physical and mechanical characteristics.
 
 **Problem Statement**:  
-> *Given features like `cylinders`, `displacement`, `horsepower`, `weight`, and `acceleration`, predict the car's `mpg` (miles per gallon).*
+> *Given features like `cylinders`, `displacement`, `horsepower`, `weight`, and `acceleration`, predict how long it takes a car to acclerate from 0 to 60 mph.*
 
 **Why it works**:  
-- `mpg` is a continuous numeric value.
-- You're modeling how engine size, power, and weight influence fuel efficiency.
-- This is a classic linear regression setup, and you could explore regularization (Ridge/Lasso) or tree-based models if needed.
+- *Acceleration* is a continuous numeric variable, making this a **multiple linear regression** problem.  
+- The chosen features (**weight**, **horsepower**, **displacement**, **cylinders**) are quantitative predictors known to influence vehicle performance.  
+- The model aims to capture the relationship between a car’s power-to-weight characteristics and its acceleration capability.  
+
 
 **Example input row**:
 ```csv
-8,455,225,4425,10
+3200,130,250,6
 ```
 **Predicted output**:
 ```csv
-14.2 mpg
+10.8 -> Acceleration
 ```
 
 ### Logistic Regression Problem Example
